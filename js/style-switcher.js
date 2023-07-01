@@ -25,20 +25,3 @@ function setActiveStyle(color)
         }
     })
 }
-/* ======= theme light and dark mode =======*/
-const day_night = document.querySelector(".day-night");
-day_night.addEventListener("click", () => {
-    day_night.querySelector("i").classList.toggle("fa-sun");
-    day_night.querySelector("i").classList.toggle("fa-moon");
-    document.body.classList.toggle("dark");
-})
-window.addEventListener("load", () => {
-    if(document.body.classList.contains("dark"))
-    {
-        day_night.querySelector("i").classList.add("fa-sun");
-    }
-    else
-    {
-        day_night.querySelector("i").classList.add("fa-moon");
-    }
-})
